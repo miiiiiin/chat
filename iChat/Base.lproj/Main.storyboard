@@ -24,7 +24,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdU-gs-8i1">
                                 <rect key="frame" x="16" y="116.33333333333331" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsM-SW-39m">
                                 <rect key="frame" x="209" y="268.33333333333331" width="150" height="30"/>
@@ -40,12 +40,12 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUh-vs-eiP">
                                 <rect key="frame" x="16" y="160.33333333333334" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fEY-a1-QNC">
                                 <rect key="frame" x="16" y="204.33333333333334" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyC-8A-qvF">
                                 <rect key="frame" x="16" y="268.33333333333331" width="150" height="30"/>
@@ -60,6 +60,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="VsM-SW-39m" firstAttribute="top" secondItem="fEY-a1-QNC" secondAttribute="bottom" constant="30" id="0xS-mr-OlU"/>
                             <constraint firstItem="oyC-8A-qvF" firstAttribute="top" secondItem="fEY-a1-QNC" secondAttribute="bottom" constant="30" id="2Dq-Wo-EF5"/>
@@ -80,9 +81,13 @@
                             <constraint firstItem="fEY-a1-QNC" firstAttribute="top" secondItem="SUh-vs-eiP" secondAttribute="bottom" constant="10" id="hER-bK-Uet"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6Hc-TI-g7Q" appends="YES" id="geR-dC-POs"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6Hc-TI-g7Q"/>
             </objects>
             <point key="canvasLocation" x="139" y="100"/>
         </scene>
