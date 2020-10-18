@@ -13,6 +13,7 @@
 		FA43E90E253C7FC9007E9DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA43E90C253C7FC9007E9DA7 /* Main.storyboard */; };
 		FA43E910253C7FCF007E9DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA43E90F253C7FCF007E9DA7 /* Assets.xcassets */; };
 		FA43E913253C7FCF007E9DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA43E911253C7FCF007E9DA7 /* LaunchScreen.storyboard */; };
+		FA43E91B253C8375007E9DA7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43E91A253C8375007E9DA7 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FA43E90F253C7FCF007E9DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA43E912253C7FCF007E9DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA43E914253C7FCF007E9DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA43E91A253C8375007E9DA7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FA43E90F253C7FCF007E9DA7 /* Assets.xcassets */,
 				FA43E911253C7FCF007E9DA7 /* LaunchScreen.storyboard */,
 				FA43E914253C7FCF007E9DA7 /* Info.plist */,
+				FA43E91A253C8375007E9DA7 /* WelcomeViewController.swift */,
 			);
 			path = iChat;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA43E90B253C7FC9007E9DA7 /* ViewController.swift in Sources */,
+				FA43E91B253C8375007E9DA7 /* WelcomeViewController.swift in Sources */,
 				FA43E907253C7FC9007E9DA7 /* AppDelegate.swift in Sources */,
 				FA43E909253C7FC9007E9DA7 /* SceneDelegate.swift in Sources */,
 			);
